@@ -1,0 +1,28 @@
+{
+  "name": "boilerplate-node-hs-css",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env DEBUG=app:* babel-node ./src/index.js --presets es2015,stage-2 --plugins transform-decorators-legacy",
+    "dev": "nodemon --exec \"npm run start\""
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "cross-env": "^5.1.1",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.12.1"
+  }
+}
